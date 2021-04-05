@@ -31,11 +31,11 @@
 #define vh_vSERIAL_CON			0x220000
 #define vh_vSERIAL_PUD			0xa00
 
-#define vh_UART_CTL_BASE 		0
+#define vh_UART_CTL_BASE 		0xec000000
 
-#define vh_ULCON	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x0))	// Specifies line control
-#define vh_UCON	 			(*(volatile unsigned *)(vh_UART_CTL_BASE+0x0))	// Specifies control
-#define vh_UFCON	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x0))	// Specifies FIFO control
+#define vh_ULCON	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x400))	// Specifies line control
+#define vh_UCON	 			(*(volatile unsigned *)(vh_UART_CTL_BASE+0x404))	// Specifies control
+#define vh_UFCON	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x408))	// Specifies FIFO control
 #define vh_UMCON	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x040c))	// Specifies modem control
 #define vh_UBRDIV	 		(*(volatile unsigned *)(vh_UART_CTL_BASE+0x0428))	// SPecifies baud rate divisor
 #define vh_UINTP1			(*(volatile unsigned *)(vh_UART_CTL_BASE+0x0430))
