@@ -38,9 +38,9 @@ void VPOS_kernel_main( void )
 	/* initialization for thread */
 	race_var = 0;
 	pthread_create(&p_thread, NULL, VPOS_SHELL, (void *)NULL);
-	pthread_create(&p_thread_0, NULL, race_ex_1, (void *)NULL);
-	pthread_create(&p_thread_1, NULL, race_ex_0, (void *)NULL);
-	pthread_create(&p_thread_2, NULL, race_ex_2, (void *)NULL);
+	//pthread_create(&p_thread_0, NULL, race_ex_1, (void *)NULL);
+	//pthread_create(&p_thread_1, NULL, race_ex_0, (void *)NULL);
+	//pthread_create(&p_thread_2, NULL, race_ex_2, (void *)NULL);
 
 	VPOS_start();
 
