@@ -40,12 +40,12 @@ void vh_serial_init(void)
 	int i;
 	// UART 1 Setting
 	// UART 1 GPIO setting
-	vh_ULCON = 
-	vh_UCON = 
-	vh_UFCON = 
-	vh_UINTM1 = 
-	vh_UINTP1 = 
-	vh_UBRDIV = 
+	vh_ULCON = 0x3;
+	vh_UCON = 0x245;
+	vh_UFCON = 0xC7;
+	vh_UINTM1 = 0xE;
+	vh_UINTP1 = 0x1F;
+	vh_UBRDIV = ((66000000/(115200*16))-1);
 	
 	vh_GPA0CON = vh_vSERIAL_CON;
 	vh_GPA0PUD = vh_vSERIAL_PUD;
