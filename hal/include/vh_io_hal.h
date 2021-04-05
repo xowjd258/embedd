@@ -28,8 +28,8 @@
   	UART address
  ******************************************************************/
 
-#define vh_vSERIAL_CON			0
-#define vh_vSERIAL_PUD			0
+#define vh_vSERIAL_CON			0x220000
+#define vh_vSERIAL_PUD			0xa00
 
 #define vh_UART_CTL_BASE 		0
 
