@@ -39,7 +39,9 @@ void vh_serial_init(void)
 	
 	int i;
 	// UART 1 Setting
-	
+	// UART 1 GPIO setting
+	vh_GPA0CON = vh_vSERIAL_CON;
+	vh_GPA0PUD = vh_vSERIAL_PUD;
 	push_idx = 0;
 	pop_idx = 0;
 	for(i=0;i<SERIAL_BUFF_SIZE;i++)	serial_buff[i] = '\0';
