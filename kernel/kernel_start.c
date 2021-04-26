@@ -16,6 +16,7 @@ void __aeabi_unwind_cpp_pr0(void){}
 void set_interrupt(void)
 {
 	// interrupt setting
+	vh_serial_irq_enable();
 }
 
 void VPOS_kernel_main( void )
